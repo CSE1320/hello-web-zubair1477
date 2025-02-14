@@ -1,2 +1,127 @@
 <!-- AN HTML COMMENT -->
- 
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        
+        html, body {
+            height: 100%;
+            width: 100%;
+            font-family: Nunito;
+            margin: 0;
+            padding: 20px;
+            
+        }
+
+        .list {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 20px;
+            padding: 20px;
+            list-style: none;
+        }
+
+        .polaroidcard {
+            position: relative;
+            width: fit-content;
+        }
+
+        .polaroid {
+            position: relative;
+            width: 200px;
+        }
+
+        .polaroid > img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+        }
+
+        .image img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .title {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li>
+            <div class="polaroidcard">
+                <div class="polaroid">
+                    <img src="assets/polaroid.png" alt="Polaroid">
+                    <div class="image">
+                        <img src="assets/deathcap.png" alt="Death Cap">
+                    </div>
+                    <div class="title">Death Cap</div>
+                </div>
+            </div>
+        </li>
+    
+        <li>
+            <div class="polaroidcard">
+                <div class="polaroid">
+                    <img src="assets/polaroid.png" alt="Polaroid">
+                    <div class="image">
+                        <img src="assets/paddystraw.png" alt="Paddy Straw">
+                    </div>
+                    <div class="title">Paddy Straw</div>
+                </div>
+            </div>
+        </li>
+    
+        <li>
+            <div class="polaroidcard">
+                <div class="polaroid">
+                    <img src="assets/polaroid.png" alt="Polaroid">
+                    <div class="image">
+                        <img src="assets/destroyingangel.png" alt="Destroying Angel">
+                    </div>
+                    <div class="title">Destroying Angel</div>
+                </div>
+            </div>
+        </li>
+        
+        <li>
+            <div class="polaroidcard">
+                <div class="polaroid">
+                    <img src="assets/polaroid.png" alt="Polaroid">
+                    <div class="image">
+                        <img src="assets/falsedeathcap.png" alt="False Death Cap">
+                    </div>
+                    <div class="title">False Death Cap</div>
+                </div>
+            </div>
+        </li>
+    
+        <li>
+            <div class="polaroidcard">
+                <div class="polaroid">
+                    <img src="assets/polaroid.png" alt="Polaroid">
+                    <div class="image">
+                        <img src="assets/puffball.png" alt="Puffball">
+                    </div>
+                    <div class="title">Puffball</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
